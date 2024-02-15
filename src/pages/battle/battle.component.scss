@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+main{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 100vh;
+
+}
+.container{
+min-width: 500px;
+display: flex;
+gap:15px;
+}
+
+.cursor{
+  border-right: .15em solid white;
+   animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+  0%, 100% {
+    border-color: transparent;
+  }
+  50%{
+    border-color: white;
+  }
+
+
+
+}
+.standard-letter {
+  color: $standard-letter;
+}
+.match {
+  color: $color-match;
+}
+
+.no-match {
+  color: $color-no-match;
+}
+
